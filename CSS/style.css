@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-
+html{
+    scroll-behavior: smooth;
+}
 
 section {
   padding: auto;
@@ -16,54 +18,48 @@ section {
 	margin:50px;
 }
 
-.row{
-  margin: 1rem;
-  padding:1rem;
-}
-
-
 /*--------------------------------------------------------------
 # Formulario
 --------------------------------------------------------------*/
-.contacto__formulario{
-  padding: 5px;
-  margin: 5px;
-}
 
 input,
-textarea{
+textarea,
+.btn{
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   border: none;
+}
+
+.contacto__redes a:hover{
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
 # Colores
 --------------------------------------------------------------*/
 .quienes_somos__container {
-	background-color: #ccfa93; 
+	background-color: #d2f5e3; 
   transition: all 0.2s;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalogo__container{
-	background-color: #91e6d6; 
+	background-color: #f5e3ce; 
   transition: all 0.2s;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 
 .galeria__container {
-	background-color: #dbabf7;
+	background-color:#d2f5e3;
     transition: all 0.2s;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); 
 }
 
 
 .contacto__container {
-	background-color:#ffa8de; 
-  display: flex;
-  padding-top: 30px;
-    transition: all 0.2s;
+	background-color: #94b4a4; 
+  padding-top: 2rem;
+  transition: all 0.2s;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -71,26 +67,29 @@ textarea{
 /*--------------------------------------------------------------
 # tipografia
 --------------------------------------------------------------*/
-
-.galeria__encabezado,
-.quienes__somos__encabezado,
-.catalogo__encabezado{
-	text-align: center;
-}
-
-
-.catalogo__titulo{
+.titulo{
   letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  padding: 1rem;
-  margin: 1rem;
+  font-weight: bold;
+  color: #4d130b;
+  margin-bottom: 2rem;
 }
 
-.quienes__somos__pic{
-	max-height: 300px;
-	max-width: 300px;
+h3 {
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 3px 5px grey;
+  letter-spacing: 2px;
 }
 
+
+.parrafo{
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  margin:2rem;
+}
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -99,7 +98,7 @@ textarea{
 	font-size:30px;
   	letter-spacing: 3px;
   	color: #ffffff;
-  	font-family: sans-serif;
+  	font-family: 'Poppins', sans-serif;
   	font-weight: bold;
   	text-decoration: none;
   	text-shadow:2px 2px 3px grey;
@@ -107,27 +106,87 @@ textarea{
 
 
 nav a{
-  font-size:15px;
+  font-size:1rem;
   letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  color: #ffffff;
   transition: 0.3s;
 
 }
 
 
 nav a:hover{
- 	text-shadow:2px 2px 2px white;
- 	color: #000000;
-  font-weight: bold;
-  text-decoration: underline;
+ 	text-shadow:2px 2px 2px #4d130b;
+  text-decoration: none;
 	}
 
 nav{
-	background-color: #53dba7;
-    border: none;
+	background-color: #ffa5a5;
+  border: none;
   transition: all 0.2s;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1);
   }
 
+
+/*--------------------------------------------------------------
+# galeria
+--------------------------------------------------------------*/
+
+.galeria__fotos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+   }
+
+.galeria__fotos img{
+  transition: transform 0.8s;
+  opacity: 0.8;
+  border-radius: 40px;
+  filter: grayscale(100%);
+  padding: 0.6rem;
+}
+
+.galeria__fotos img:hover{
+  opacity:1;
+  filter:none;
+  animation: pulse;
+  animation-duration: 1s;
+}
+
+/*--------------------------------------------------------------
+# catalogo
+--------------------------------------------------------------*/
+.row{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.card{
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-around;
+box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.searchbar{
+  border: none;
+  padding: 0.5rem;
+  margin: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# quienes somos
+--------------------------------------------------------------*/
+.card-img-top{
+  opacity: 0.8;
+  filter: grayscale(80%);
+}
+
+.card-img-top:hover{
+    opacity:1;
+  filter:none;
+}
