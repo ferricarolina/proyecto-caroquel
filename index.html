@@ -12,7 +12,7 @@
 	<meta name="keywords" content="juguetes, madera, artesanales, didacticos, niños, artesanias">
 
 <!---------- estilo propio --------->
-	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="stylesheet" href="./css/main.css"/>
 
 <!---------- fonts --------->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -69,33 +69,29 @@
 	
 	<div class="home__container container-fluid">
 
-		<div id="carousel" class="carousel slide" data-ride="carousel">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
-			<div class="carousel-inner">
-			    
-			    <div class="carousel-item active">
-			      <img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide1.jpg" alt="banner1">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide2.jpg" alt="banner2">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide3.jpg" alt="banner3">
-			    </div>
+	 		<ol class="carousel-indicators">
+	    		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  		</ol>
 
-				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-			   		 <span aria-hidden="true">
-			   		 	<img src=".\imagenes\icons\prev.svg" alt="" width="38" height="38">
-			   		 </span>
-			 	</a>
+  			<div class="carousel-inner">
 
-			  	<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-			   	 	<span aria-hidden="true">
-			   	 		<img src=".\imagenes\icons\next.svg" alt="" width="38" height="38">
-			   	 	</span>
-			 	</a>
+	    		<div class="carousel-item active">
+					<img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide1.jpg" alt="banner1">
+				</div>
 
-			 </div>
+	   			<div class="carousel-item">
+					<img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide2.jpg" alt="banner2">
+				</div>
+
+	    		<div class="carousel-item">
+	    			<img class="w-100 rounded img-fluid mx-auto d-block" src=".\imagenes\slide3.jpg" alt="banner3">
+	    		</div>
+
+  			</div>
 
 		</div>
 
@@ -155,19 +151,19 @@
 				
 		<h1 class="catalogo_titulo titulo text-center">CATÁLOGO ONLINE</h1>
 
-			<div class="catalogo-searchbar searchbar">
+			<div class="container-fluid searchbar">
  			 <form class="form-inline">
-   				 <input class="form-control mr-sm-2 col-7" type="search" placeholder="Buscar en la página..." aria-label="Search">
+   				 <input class="form-control mr-sm-3 col-11" type="search" placeholder="Buscar en la página..." aria-label="Search">
     			<button class="btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
  			 </form>
  			</div>
 
 
-		<div class="catalogo row container-fluid">
+		<div class="row container-fluid">
 
 			<div class="text-center col-sm-6 col-md-6 col-lg-3">
 				<div class="card">
-					<div class="card-body">
+					<div class="card-body rounded">
 						<img class="rounded img-fluid" src=".\imagenes\catalogo\1.jpg">
 						<p class="card-text">Lámpara mesa de luz. Modelo: muñeco robot. Altura: 40cm</p>
 						<a class="btn btn-outline-info" href="#contacto" role="button">Comprar 
@@ -443,24 +439,24 @@
 		     	<h3 class="mb-4">BUSCANOS EN LAS REDES</h3>
 
 			  	<a class="d-inline m-3" href="http://pinterest.com" target="__blank">
-			   	<img src=".\imagenes\icons\pinterest.svg" width="50" height="50" class="icon d-inline-block rounded-circle" alt="pinterest">
+			   	<img src=".\imagenes\icons\pinterest.svg" class="icon d-inline-block rounded-circle" alt="pinterest">
 			   	</a>
 							
 				<a class="d-inline m-3" href="http://instagram.com" target="__blank">
-			   	<img src=".\imagenes\icons\instagram.svg" width="50" height="50" class="icon d-inline-block rounded-circle" alt="instagram">
+			   	<img src=".\imagenes\icons\instagram.svg" class="icon d-inline-block rounded-circle" alt="instagram">
 			   	</a>
 			   		 		
 			   	<a class="d-inline m-3" href="http://facebook.com/caroquel.artesanias" target="__blank">
-			   	<img src=".\imagenes\icons\facebook.svg" width="50" height="50" class="icon d-inline-block rounded-circle" alt="facebook">
+			   	<img src=".\imagenes\icons\facebook.svg" class="icon d-inline-block rounded-circle" alt="facebook">
 			   	</a>
 
 			   	<a class="d-inline m-3" href="https://api.whatsapp.com/send?phone=5491148000000&text=Hola!%20Quiero%20hacer%20una%20consulta!" target="__blank">
-			   	<img src=".\imagenes\icons\whatsapp.svg" width="50" height="50" class="icon d-inline-block rounded-circle" alt="whatsapp">
+			   	<img src=".\imagenes\icons\whatsapp.svg" class="icon d-inline-block rounded-circle" alt="whatsapp">
 			   	</a>
     	</div>
 
     	<div class="contacto__pagos col-sm text-center">
-      		<h3>MEDIOS DE PAGO</h3>
+      		<h3 class="mb-4">MEDIOS DE PAGO</h3>
 			<img class="d-inline-block rounded" src=".\imagenes\mercadopago.png">
     	</div>
 

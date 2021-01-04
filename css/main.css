@@ -1,0 +1,239 @@
+/*--------------------------------------------------------------
+General
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# tipografia
+--------------------------------------------------------------*/
+.titulo {
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #4d130b;
+  margin-bottom: 2rem; }
+
+h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 3px 5px grey;
+  letter-spacing: 2px; }
+
+.parrafo {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  margin: 2rem; }
+
+/*--------------------------------------------------------------
+# Colores
+--------------------------------------------------------------*/
+.quienes_somos__container {
+  background-color: #d2f5e3; }
+
+.catalogo__container {
+  background-color: #f5e3ce; }
+
+.galeria__container {
+  background-color: #d2f5e3; }
+
+.contacto__container {
+  background-color: #94b4a4;
+  padding-top: 2rem; }
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth; }
+
+section {
+  padding: auto;
+  margin: auto; }
+
+.home__container,
+.quienes_somos__container,
+.catalogo__container,
+.galeria__container,
+.contacto__container {
+  padding: 50px;
+  margin: 50px;
+  transition: all 0.2s;
+  box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); }
+
+/*--------------------------------------------------------------
+Secciones
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# quienes somos
+--------------------------------------------------------------*/
+.card-img-top {
+  opacity: 0.8;
+  filter: grayscale(80%); }
+
+.card-img-top:hover {
+  opacity: 1;
+  filter: none; }
+
+/*--------------------------------------------------------------
+# catalogo
+--------------------------------------------------------------*/
+.row {
+  display: flex;
+  margin-bottom: 1rem; }
+
+.card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); }
+
+.searchbar {
+  border: none;
+  padding: 0.5rem;
+  margin: 1.5rem; }
+
+/*--------------------------------------------------------------
+# Contacto
+--------------------------------------------------------------*/
+input,
+textarea,
+.btn {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border: none; }
+
+.contacto__redes a:hover {
+  text-decoration: none; }
+
+.icon {
+  width: 50px;
+  height: 50px; }
+
+/*--------------------------------------------------------------
+# galeria
+--------------------------------------------------------------*/
+.galeria__fotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around; }
+
+.galeria__fotos img {
+  transition: transform 0.8s;
+  opacity: 0.8;
+  border-radius: 40px;
+  filter: grayscale(100%);
+  padding: 0.6rem; }
+
+.galeria__fotos img:hover {
+  opacity: 1;
+  filter: none;
+  animation: pulse;
+  animation-duration: 1s; }
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+#logo a {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px grey; }
+
+nav a {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.3s; }
+
+nav a:hover {
+  text-shadow: 2px 2px 2px #4d130b;
+  text-decoration: none; }
+
+nav {
+  background-color: #ffa5a5;
+  border: none;
+  transition: all 0.2s;
+  box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); }
+
+/*--------------------------------------------------------------
+Media queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# QUERIES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# MOBILE
+--------------------------------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px), (orientation: portrait) {
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px; }
+  .titulo {
+    font-size: 18px;
+    font-weight: bold; }
+  .parrafo {
+    font-size: 14px; }
+  h3 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 5px;
+    padding: 5px; }
+  .galeria__fotos img {
+    opacity: 1;
+    filter: none;
+    width: 125px;
+    height: 125px; }
+  .galeria__fotos img:hover {
+    animation: none;
+    animation-duration: 1s; }
+  .card-img-top {
+    opacity: 1;
+    filter: none;
+    width: 123px;
+    height: 70px; }
+  .card-text {
+    font-size: smaller; }
+  .card {
+    margin: 10px; } }
+
+/*--------------------------------------------------------------
+# TABLET
+--------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px), (orientation: portrait) {
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px; }
+  .titulo {
+    font-size: 22px;
+    font-weight: bold; }
+  .parrafo {
+    font-size: 18px; }
+  h3 {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px; }
+  .galeria__fotos img {
+    opacity: 1;
+    filter: none;
+    width: 175px;
+    height: 175px; }
+  .galeria__fotos img:hover {
+    animation: none; }
+  .card-img-top {
+    opacity: 1;
+    filter: none;
+    width: 123px;
+    height: 70px; }
+  .card {
+    margin: 15px; } }
