@@ -1,5 +1,7 @@
-La pagina contiene SEO y tiene linkeadas animaciones y fonts. 
+La pagina contiene SEO, tiene linkeadas animaciones y fonts. 
 
-Está hecha con Bootstrap y Js.
+Está hecha desde cero con Bootstrap (no theme ni template) y Js.
 
-Falta: SASS / agregar media queries
+Contiene modal de BS en botón "Enviar", carrusel y smooth scroll.
+
+Tiene linkeado API Whatsapp (Whatsapp web, pero si el sitio se abre desde el móvil, redirecciona a la aplicación).
