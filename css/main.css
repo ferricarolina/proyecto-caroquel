@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-General
+                        General
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # tipografia
@@ -12,29 +12,32 @@ General
   color: #4d130b;
   margin-bottom: 2rem; }
 
-h3 {
+.titulo--secundario {
   color: white;
-  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
   text-shadow: 1px 3px 5px grey;
-  letter-spacing: 2px; }
+  margin-bottom: 1rem; }
 
-.parrafo {
-  font-family: "Open Sans", sans-serif;
-  text-align: justify;
-  margin: 2rem; }
+.card-text {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Colores
 --------------------------------------------------------------*/
-.quienes_somos__container {
+.home__container {
   background-color: #d2f5e3; }
 
-.catalogo__container {
+.quienes_somos__container {
   background-color: #f5e3ce; }
 
-.galeria__container {
+.catalogo__container {
   background-color: #d2f5e3; }
+
+.galeria__container {
+  background-color: #f5e3ce; }
 
 .contacto__container {
   background-color: #94b4a4;
@@ -61,7 +64,7 @@ section {
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); }
 
 /*--------------------------------------------------------------
-Secciones
+                       Secciones
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # quienes somos
@@ -102,12 +105,39 @@ textarea,
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   border: none; }
 
+.contacto__redes img:hover {
+  filter: none;
+  opacity: 1;
+  animation: pulse;
+  animation-duration: 1s; }
+
 .contacto__redes a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white;
+  animation: pulse;
+  animation-duration: 1s; }
 
 .icon {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  filter: grayscale(80%);
+  opacity: 0.8; }
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100; }
+
+.whatsapp-icon {
+  margin-top: 13px; }
 
 /*--------------------------------------------------------------
 # galeria
@@ -162,30 +192,29 @@ nav {
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.1); }
 
 /*--------------------------------------------------------------
-Media queries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# QUERIES
+                     Media queries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # MOBILE
 --------------------------------------------------------------*/
-@media (min-width: 480px) and (max-width: 767px), (orientation: portrait) {
+@media (min-width: 320px) and (max-width: 768px) {
   .icon {
     width: 40px;
     height: 40px;
-    margin: 10px; }
+    filter: none;
+    opacity: 1;
+    display: block; }
   .titulo {
     font-size: 18px;
     font-weight: bold; }
-  .parrafo {
-    font-size: 14px; }
-  h3 {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-align: left;
-    margin: 5px;
-    padding: 5px; }
+  .titulo--secundario {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 3px 5px grey;
+    margin-bottom: 1rem; }
   .galeria__fotos img {
     opacity: 1;
     filter: none;
@@ -207,22 +236,25 @@ Media queries
 /*--------------------------------------------------------------
 # TABLET
 --------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 992px), (orientation: portrait) {
+@media (max-width: 1024px) {
   .icon {
     width: 40px;
     height: 40px;
-    margin: 10px; }
+    filter: none;
+    opacity: 1;
+    display: block; }
   .titulo {
     font-size: 22px;
     font-weight: bold; }
-  .parrafo {
-    font-size: 18px; }
-  h3 {
-    font-size: 12px;
-    letter-spacing: 3px;
-    text-align: center;
-    margin: 5px;
-    padding: 5px; }
+  .titulo--secundario {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 3px 5px grey;
+    margin-bottom: 1rem;
+    text-align: center; }
   .galeria__fotos img {
     opacity: 1;
     filter: none;
